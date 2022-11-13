@@ -42,7 +42,7 @@ void app_main(void)
     vTaskPrioritySet(NULL, 10);
 
     xTaskCreate(vTask, "Task 1", 2048, (void *)1u, 1, &task1);
-    xTaskCreate(vTask, "Task 2", 2048, (void *)2u, 1, &task2);
+    xTaskCreate(vTask, "Task 2", 2048, (void *)2u, 2, &task2);
 
     vTaskDelete(NULL);
 }
